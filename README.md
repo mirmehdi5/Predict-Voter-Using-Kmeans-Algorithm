@@ -1,1 +1,1 @@
-# Predict-Voter-Using-Kmeans-Algotithm
+# Predict-Voter-Using-Kmeans-Algorithm
