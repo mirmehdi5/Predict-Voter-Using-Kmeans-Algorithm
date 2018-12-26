@@ -1,0 +1,47 @@
+#Steps to execute this program
+
+1. Export the project as jar file with the name - kmeans-hd.jar.
+2. Make sure that the input files-"voterun1.txt" and "centroidrun1.txt" are in /ec folder of hadoop file system.
+-----------------------------------------------------------------------------------
+centroidrun1.txt
+
+9,38,91,92,74,55,84,90,91,43,14,58,65,64,92,64,democrat 0
+91,62,9,8,26,45,16,10,9,57,14,79,35,36,8,64,republican  1
+-----------------------------------------------------------------------------------------
+
+3. Open cmd and cd to path where the exported jar file is located and run the command 
+			
+				"hadoop jar kmeans-hd.jar com.ec.lab.KmeansMR /ec /result/".
+				
+4. "/result" in the above command is the output directory in the hdfs.
+5. Run the following command to get the list of files in the result directory.
+				
+				"hadoop fs -ls /result"
+				
+6. The following output will be displayed
+				
+			drwxr-xr-x   - MIR supergroup          0 2018-12-06 15:52 /result/171075392385778
+			drwxr-xr-x   - MIR supergroup          0 2018-12-06 15:53 /result/171112516889708
+			drwxr-xr-x   - MIR supergroup          0 2018-12-06 15:53 /result/171147275338829
+			drwxr-xr-x   - MIR supergroup          0 2018-12-06 15:54 /result/171182929056852
+			drwxr-xr-x   - MIR supergroup          0 2018-12-06 15:54 /result/171216776361689
+			drwxr-xr-x   - MIR supergroup          0 2018-12-06 15:55 /result/171250621303936
+			drwxr-xr-x   - MIR supergroup          0 2018-12-06 15:56 /result/171285529439372
+			drwxr-xr-x   - MIR supergroup          0 2018-12-06 15:56 /result/171318297225648
+			drwxr-xr-x   - MIR supergroup          0 2018-12-06 15:57 /result/171352105251061
+			
+7. Open the last folder created, in this example it is -
+			
+				"hadoop fs -ls /result/17135*"
+				
+8. The following output will be displayed.
+			
+			Found 2 items
+			-rw-r--r--   1 MIR supergroup          0 2018-12-06 15:57 /result/171352105251061/_SUCCESS
+			-rw-r--r--   1 MIR supergroup        595 2018-12-06 15:57 /result/171352105251061/part-00000
+			
+9.  Run the following command to get the result.
+
+			"hadoop fs -cat /result/171352105251061/part-00000"
+			
+P.S The Folder "171352105251061" depends on the timestamp. it varies everytime the code is executed.
