@@ -1,0 +1,11 @@
+digraph "org.jboss.as.quickstarts.greeter.domain.UserDao"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="org.jboss.as.quickstarts.greeter.domain.\lUserDao",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="org.jboss.as.quickstarts.greeter.domain.\lEJBUserDao",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_e_j_b_user_dao.html"];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="org.jboss.as.quickstarts.greeter.domain.\lManagedBeanUserDao",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_user_dao.html",tooltip="This class has all the user related operations. "];
+}

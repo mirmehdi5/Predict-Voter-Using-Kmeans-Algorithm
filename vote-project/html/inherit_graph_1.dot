@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="org.jboss.as.quickstarts.greeter.domain.\lModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model.html",tooltip="This class is used to map the \"Models\" table in the database. "];
+}

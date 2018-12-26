@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:ui="http://java.sun.com/jsf/facelets"
+   xmlns:h="http://java.sun.com/jsf/html"
+   xmlns:f="http://java.sun.com/jsf/core">
+   <ui:composition template="template.xhtml">
+      <ui:define name="content">
+         <div class="login-block">
+            <a href="/lr-db/greet.xhtml" class="back-btn">Back</a>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-5 login-sec">
+                     <h2 class="text-center">Train Model</h2>
+                     <h:form id="devForm" class="login-form">
+                        <div class="form-group train-model">
+                           <h:outputLabel for="inputfilepath" class="text-uppercase">Input Filepath in Hadoop:</h:outputLabel>
+                           <h:inputText id="inputfilepath" class="form-control"
+                              value="#{developerController.inputfilepath}" />
+                        </div>
+                        <div class="form-group">
+                           <h:outputLabel for="outputfilepath" class="text-uppercase">Output Filepath in Hadoop: </h:outputLabel>
+                           <h:inputText id="outputfilepath" class="form-control"
+                              value="#{developerController.outputfilepath}" />
+                        </div>
+                        <h:commandButton id="submit" value="submit" class="btn btn-login float-right"
+                           action="#{developerController.trainmodel}" />
+                     </h:form>
+                     <br/>
+                  </div>
+                  <div class="col-md-5 login-sec">
+                     <h2 class="text-center">Save the Model/Predict Accuracy</h2>
+                     <h:form id="devSaveForm" class="login-form">
+                        <div class="form-group">
+                           <h:outputLabel for="modelfilepath" class="text-uppercase">Enter the path of file in HDFS:</h:outputLabel>
+                           <h:inputText id="modelfilepath" class="form-control"
+                              value="#{developerController.modelfilepath}" />
+                        </div>
+                        <div class="form-group">
+                           <h:outputLabel for="modelclassname" class="text-uppercase">Enter the Name of the Class : </h:outputLabel>
+                           <h:inputText id="modelclassname" class="form-control"
+                              value="#{developerController.modelclassname}" />
+                        </div>
+                          <h:commandButton id="calc" value="Calculate Accuracy" class="btn btn-login float-right "
+                           action="#{developerController.calcacc}" />  
+                        <h:commandButton id="submit" value="Save the Model" class="btn btn-login float-right save-btn"
+                           action="#{developerController.savemodel}" />
+                     </h:form>
+                     <br/>
+                  </div>
+                  <h:outputText value="#{developerController.greeting}" style="color: green;    padding-left: 15%;"
+                     rendered="#{not empty developerController.greeting}" />
+               </div>
+            </div>
+         </div>
+      </ui:define>
+   </ui:composition>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:ui="http://java.sun.com/jsf/facelets"
+   xmlns:h="http://java.sun.com/jsf/html"
+   xmlns:f="http://java.sun.com/jsf/core">
+   <ui:composition template="template.xhtml">
+      <ui:define name="content">
+         <div class="login-block">
+            <a href="/lr-db/greet.xhtml" class="back-btn">Back</a>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-10 login-sec">
+                     <h2 class="text-center">Change the role</h2>
+                     <h:form id="tempForm" class="login-form">
+                        <div class="form-group">
+                           <h:outputLabel for="name" class="text-uppercase">Enter username:</h:outputLabel>
+                           <h:inputText id="name" class="form-control"
+                              value="#{adminController.name}" />
+                        </div>
+                        <div class="form-group">
+                           <h:outputLabel for="role" class="text-uppercase">Enter Role:</h:outputLabel>
+                           <h:inputText id="role" class="form-control" maxlength="1" validatorMessage="Enter a valid role -'1,2 or 3!'" converterMessage="Enter a valid number"
+                              value="#{adminController.role}">
+                              <f:validateLongRange maximum="3" minimum="1"/>
+                           </h:inputText>
+                           <h:message for="role" style="color:red" />
+                        </div>
+                        <h:commandButton id="change" value="change" class="btn btn-login float-right"
+                           action="#{adminController.change}" />
+                     </h:form>
+                     <br/>
+                     <h:outputText value="#{adminController.greeting}" style="color: green;"
+                        rendered="#{not empty adminController.greeting}" />
+                  </div>
+               </div>
+            </div>
+         </div>
+         <br />
+      </ui:define>
+   </ui:composition>
+</html>

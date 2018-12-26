@@ -1,0 +1,217 @@
+\hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao}{}\section{org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao Class Reference}
+\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao}\index{org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao@{org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao}}
+
+
+This class is implements the \hyperlink{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao}{Model\+Dao} interface. This class is used for all the data related operations.  
+
+
+
+
+Inheritance diagram for org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao\+:
+% FIG 0
+
+
+Collaboration diagram for org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a3249ae7d8c010b92d8226cffbbe2de78}{train\+Model} (String Inputfilepath, String Outputfilepath)
+\begin{DoxyCompactList}\small\item\em This function executes the E\+C\+J\+M\+S\+Producer.\+jar file which in turn invokes a Message driven bean which again calls an E\+JB to create clusters using Kmeans algorithm. \end{DoxyCompactList}\item 
+String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a5be76afee3c059eafe8e617578bc1f26}{save\+Model} (String model\+Filepath, String model\+Classname)  throws File\+Not\+Found\+Exception, I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em This function saves the cluster in the database. \end{DoxyCompactList}\item 
+String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a4341e2de86398808ce85aed287d16cf5}{predict\+Model} (String input1, String input2, String input3, String input4, String input5, String input6, String input7, String input8, String input9, String input10, String input11, String input12, String input13, String input14, String input15, String input16, String Modelname)
+\begin{DoxyCompactList}\small\item\em This function has the logic to the predict which party a particular voter would support using the clusters in the database. \end{DoxyCompactList}\item 
+String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_ab92b0e5250b87e53aedff8796054c433}{calc\+Accuracy} (String inputpath, String Model\+Class\+Name)  throws I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em This function is used to calculate the accuracy of the algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Object \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a81e8eb5de194e97e02443928b9587753}{read} (Result\+Set rs, String columnname)  throws S\+Q\+L\+Exception, I\+O\+Exception, Class\+Not\+Found\+Exception 
+\begin{DoxyCompactList}\small\item\em This is used the convert the result set into bytearray stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Entity\+Manager \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_aa04fb7ba26de26367145006b08d29f9b}{entity\+Manager}
+\item 
+User\+Transaction \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a6974a7e0d2a2cff382cf65ee6684f8ce}{utx}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final Logger \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a9afb9cb8320b6ff0ebeae7a77c4166b5}{logger} = Logger\+Factory.\+get\+Logger(Managed\+Bean\+Model\+Dao.\+class.\+get\+Name())
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is implements the \hyperlink{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao}{Model\+Dao} interface. This class is used for all the data related operations. 
+
+\begin{DoxyAuthor}{Author}
+M\+IR 
+\end{DoxyAuthor}
+
+
+Definition at line 55 of file Managed\+Bean\+Model\+Dao.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_ab92b0e5250b87e53aedff8796054c433}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_ab92b0e5250b87e53aedff8796054c433}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao}!calc\+Accuracy@{calc\+Accuracy}}
+\index{calc\+Accuracy@{calc\+Accuracy}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao}}
+\subsubsection{\texorpdfstring{calc\+Accuracy()}{calcAccuracy()}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao.\+calc\+Accuracy (\begin{DoxyParamCaption}\item[{String}]{inputpath,  }\item[{String}]{Model\+Class\+Name }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+This function is used to calculate the accuracy of the algorithm. 
+
+
+
+Implements \hyperlink{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao_afb454f408ff6b9892a5d6e59cddca2c0}{org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model\+Dao}.
+
+
+
+Definition at line 559 of file Managed\+Bean\+Model\+Dao.\+java.
+
+
+
+References org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Main\+Cluster.\+get\+Data(), org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao.\+predict\+Model(), org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Cluster\+Model.\+set\+Data(), and org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Main\+Cluster.\+set\+Data().
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a4341e2de86398808ce85aed287d16cf5}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a4341e2de86398808ce85aed287d16cf5}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao}!predict\+Model@{predict\+Model}}
+\index{predict\+Model@{predict\+Model}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao}}
+\subsubsection{\texorpdfstring{predict\+Model()}{predictModel()}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao.\+predict\+Model (\begin{DoxyParamCaption}\item[{String}]{input1,  }\item[{String}]{input2,  }\item[{String}]{input3,  }\item[{String}]{input4,  }\item[{String}]{input5,  }\item[{String}]{input6,  }\item[{String}]{input7,  }\item[{String}]{input8,  }\item[{String}]{input9,  }\item[{String}]{input10,  }\item[{String}]{input11,  }\item[{String}]{input12,  }\item[{String}]{input13,  }\item[{String}]{input14,  }\item[{String}]{input15,  }\item[{String}]{input16,  }\item[{String}]{Modelname }\end{DoxyParamCaption})}
+
+
+
+This function has the logic to the predict which party a particular voter would support using the clusters in the database. 
+
+
+
+Implements \hyperlink{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao_ac57ecc08e389fcc50bd26a3fbe579de3}{org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model\+Dao}.
+
+
+
+Definition at line 207 of file Managed\+Bean\+Model\+Dao.\+java.
+
+
+
+References org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Main\+Cluster.\+get\+Data(), and org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model.\+get\+Object().
+
+
+
+Referenced by org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao.\+calc\+Accuracy().
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a81e8eb5de194e97e02443928b9587753}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a81e8eb5de194e97e02443928b9587753}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao}!read@{read}}
+\index{read@{read}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily static Object org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao.\+read (\begin{DoxyParamCaption}\item[{Result\+Set}]{rs,  }\item[{String}]{columnname }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception, I\+O\+Exception, Class\+Not\+Found\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This is used the convert the result set into bytearray stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rs} & \\
+\hline
+{\em columnname} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+{\em I\+O\+Exception} & \\
+\hline
+{\em Class\+Not\+Found\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 546 of file Managed\+Bean\+Model\+Dao.\+java.
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a5be76afee3c059eafe8e617578bc1f26}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a5be76afee3c059eafe8e617578bc1f26}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao}!save\+Model@{save\+Model}}
+\index{save\+Model@{save\+Model}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao}}
+\subsubsection{\texorpdfstring{save\+Model()}{saveModel()}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao.\+save\+Model (\begin{DoxyParamCaption}\item[{String}]{model\+Filepath,  }\item[{String}]{model\+Classname }\end{DoxyParamCaption}) throws File\+Not\+Found\+Exception, I\+O\+Exception}
+
+
+
+This function saves the cluster in the database. 
+
+
+
+Implements \hyperlink{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao_acf8fb2e59848570f96989b86d8dad6c6}{org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model\+Dao}.
+
+
+
+Definition at line 103 of file Managed\+Bean\+Model\+Dao.\+java.
+
+
+
+References org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model.\+set\+Classname(), org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Cluster\+Model.\+set\+Data(), org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Main\+Cluster.\+set\+Data(), org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model.\+set\+Date(), org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model.\+set\+Name(), and org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model.\+set\+Object().
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a3249ae7d8c010b92d8226cffbbe2de78}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a3249ae7d8c010b92d8226cffbbe2de78}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao}!train\+Model@{train\+Model}}
+\index{train\+Model@{train\+Model}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao}}
+\subsubsection{\texorpdfstring{train\+Model()}{trainModel()}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao.\+train\+Model (\begin{DoxyParamCaption}\item[{String}]{Inputfilepath,  }\item[{String}]{Outputfilepath }\end{DoxyParamCaption})}
+
+
+
+This function executes the E\+C\+J\+M\+S\+Producer.\+jar file which in turn invokes a Message driven bean which again calls an E\+JB to create clusters using Kmeans algorithm. 
+
+
+
+Implements \hyperlink{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao_aef8db8a9057a95cc0a3bb027843b609d}{org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model\+Dao}.
+
+
+
+Definition at line 68 of file Managed\+Bean\+Model\+Dao.\+java.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_aa04fb7ba26de26367145006b08d29f9b}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_aa04fb7ba26de26367145006b08d29f9b}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao}!entity\+Manager@{entity\+Manager}}
+\index{entity\+Manager@{entity\+Manager}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao}}
+\subsubsection{\texorpdfstring{entity\+Manager}{entityManager}}
+{\footnotesize\ttfamily Entity\+Manager org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao.\+entity\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 58 of file Managed\+Bean\+Model\+Dao.\+java.
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a9afb9cb8320b6ff0ebeae7a77c4166b5}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a9afb9cb8320b6ff0ebeae7a77c4166b5}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao}!logger@{logger}}
+\index{logger@{logger}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao}}
+\subsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily final Logger org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao.\+logger = Logger\+Factory.\+get\+Logger(Managed\+Bean\+Model\+Dao.\+class.\+get\+Name())\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 63 of file Managed\+Bean\+Model\+Dao.\+java.
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a6974a7e0d2a2cff382cf65ee6684f8ce}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a6974a7e0d2a2cff382cf65ee6684f8ce}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao}!utx@{utx}}
+\index{utx@{utx}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Managed\+Bean\+Model\+Dao}}
+\subsubsection{\texorpdfstring{utx}{utx}}
+{\footnotesize\ttfamily User\+Transaction org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao.\+utx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 61 of file Managed\+Bean\+Model\+Dao.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/jboss/as/quickstarts/greeter/domain/\hyperlink{_managed_bean_model_dao_8java}{Managed\+Bean\+Model\+Dao.\+java}\end{DoxyCompactItemize}

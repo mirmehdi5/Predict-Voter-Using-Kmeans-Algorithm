@@ -1,0 +1,40 @@
+Author\+: Mir Mohammed Mehdi Level\+: Beginner Technologies\+: C\+DI, J\+SF, J\+PA, E\+JB, J\+TA Summary\+: The {\ttfamily greeter} quickstart demonstrates the use of {\itshape C\+DI}, {\itshape J\+PA}, {\itshape J\+TA}, {\itshape E\+JB} and {\itshape J\+SF} in Wild\+Fly. Target Product\+: Wild\+Fly Source\+: \href{https://github.com/wildfly/quickstart/}{\tt https\+://github.\+com/wildfly/quickstart/}
+
+\subsection*{What is it? }
+
+The application does the linear regression model training and prediction service.
+
+When you deploy this example, 3 users are automatically created\+:
+
+Username $\vert$ Password $\vert$ Role mir mehdi 1 -\/ (Admin) faiza zuhair 2 -\/ (Developer) jdoe doe 3 -\/ (General)
+
+To test this example\+:
+
+Admin User \+:
+
+
+\begin{DoxyEnumerate}
+\item Enter username as \textquotesingle{}mir\textquotesingle{} and password as \textquotesingle{}mehdi\textquotesingle{} to land into the admin page.
+\item Note that the passwords are encrypted in the database.
+\item In the admin page, Enter any username present in the database and new role number and click the change button to change the role of that user in the database.
+\end{DoxyEnumerate}
+
+Developer User\+:
+
+
+\begin{DoxyEnumerate}
+\item Enter username as \textquotesingle{}faiza\textquotesingle{} and password as \textquotesingle{}zuhair\textquotesingle{} to land into the developer page.
+\item Enter input filename as \char`\"{}data.\+arff\char`\"{} and give any class name to that model in the \char`\"{}\+Model Class Name\char`\"{} field.
+\item Press submit button to train the model and store in the database.
+\end{DoxyEnumerate}
+
+General User\+:
+
+
+\begin{DoxyEnumerate}
+\item Enter username as \textquotesingle{}jdoe\textquotesingle{} and password as \textquotesingle{}doe\textquotesingle{} to land into the general page.
+\item Enter \char`\"{}data\+\_\+predict.\+arff\char`\"{} as input filename and give the modelclassname that was given in the developer page.
+\item Press the submit button to predict the value from the trained dataset.
+\end{DoxyEnumerate}
+
+\+\_\+\+Note\+: The files \char`\"{}data.\+arff\char`\"{}, \char`\"{}data\+\_\+predict.\+arff\char`\"{} and \char`\"{}house\+\_\+test.\+arff\char`\"{} should be present in the path \char`\"{}\+C\+:/tmp/enterprise/data/\char`\"{} for the project to run properly with the above inputs. 

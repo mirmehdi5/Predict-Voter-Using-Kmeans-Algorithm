@@ -1,0 +1,196 @@
+\hypertarget{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao}{}\section{org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model\+Dao Interface Reference}
+\label{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao}\index{org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model\+Dao@{org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model\+Dao}}
+
+
+This interface consists of all the model related operations.  
+
+
+
+
+Inheritance diagram for org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model\+Dao\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao_aef8db8a9057a95cc0a3bb027843b609d}{train\+Model} (String input, String Output)
+\begin{DoxyCompactList}\small\item\em This function trains the data using Kmeans algorithm and creates clusters. \end{DoxyCompactList}\item 
+String \hyperlink{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao_acf8fb2e59848570f96989b86d8dad6c6}{save\+Model} (String modelfilepath, String model\+Class\+Name)  throws File\+Not\+Found\+Exception, I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em This function saves the cluster in the database. \end{DoxyCompactList}\item 
+String \hyperlink{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao_ac57ecc08e389fcc50bd26a3fbe579de3}{predict\+Model} (String input1, String input2, String input3, String input4, String input5, String input6, String input7, String input8, String input9, String input10, String input11, String input12, String input13, String input14, String input15, String input16, String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model}{Model})
+\begin{DoxyCompactList}\small\item\em This function predicts which party would the voter support. \end{DoxyCompactList}\item 
+String \hyperlink{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao_afb454f408ff6b9892a5d6e59cddca2c0}{calc\+Accuracy} (String inputpath, String Model\+Class\+Name)  throws I\+O\+Exception
+\begin{DoxyCompactList}\small\item\em This function calculates the accuracy of the algorithm used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This interface consists of all the model related operations. 
+
+\begin{DoxyAuthor}{Author}
+M\+IR 
+\end{DoxyAuthor}
+
+
+Definition at line 27 of file Model\+Dao.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao_afb454f408ff6b9892a5d6e59cddca2c0}\label{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao_afb454f408ff6b9892a5d6e59cddca2c0}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Model\+Dao}!calc\+Accuracy@{calc\+Accuracy}}
+\index{calc\+Accuracy@{calc\+Accuracy}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Model\+Dao}}
+\subsubsection{\texorpdfstring{calc\+Accuracy()}{calcAccuracy()}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model\+Dao.\+calc\+Accuracy (\begin{DoxyParamCaption}\item[{String}]{inputpath,  }\item[{String}]{Model\+Class\+Name }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+
+
+This function calculates the accuracy of the algorithm used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputpath} & \\
+\hline
+{\em Model\+Class\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_ab92b0e5250b87e53aedff8796054c433}{org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao}.
+
+
+
+Referenced by org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+calcacc().
+
+\mbox{\Hypertarget{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao_ac57ecc08e389fcc50bd26a3fbe579de3}\label{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao_ac57ecc08e389fcc50bd26a3fbe579de3}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Model\+Dao}!predict\+Model@{predict\+Model}}
+\index{predict\+Model@{predict\+Model}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Model\+Dao}}
+\subsubsection{\texorpdfstring{predict\+Model()}{predictModel()}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model\+Dao.\+predict\+Model (\begin{DoxyParamCaption}\item[{String}]{input1,  }\item[{String}]{input2,  }\item[{String}]{input3,  }\item[{String}]{input4,  }\item[{String}]{input5,  }\item[{String}]{input6,  }\item[{String}]{input7,  }\item[{String}]{input8,  }\item[{String}]{input9,  }\item[{String}]{input10,  }\item[{String}]{input11,  }\item[{String}]{input12,  }\item[{String}]{input13,  }\item[{String}]{input14,  }\item[{String}]{input15,  }\item[{String}]{input16,  }\item[{String}]{Model }\end{DoxyParamCaption})}
+
+
+
+This function predicts which party would the voter support. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input1} & \\
+\hline
+{\em input2} & \\
+\hline
+{\em input3} & \\
+\hline
+{\em input4} & \\
+\hline
+{\em input5} & \\
+\hline
+{\em input6} & \\
+\hline
+{\em input7} & \\
+\hline
+{\em input8} & \\
+\hline
+{\em input9} & \\
+\hline
+{\em input10} & \\
+\hline
+{\em input11} & \\
+\hline
+{\em input12} & \\
+\hline
+{\em input13} & \\
+\hline
+{\em input14} & \\
+\hline
+{\em input15} & \\
+\hline
+{\em input16} & \\
+\hline
+{\em \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model}{Model}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a4341e2de86398808ce85aed287d16cf5}{org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao}.
+
+
+
+Referenced by org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+General\+Controller.\+predictmodel().
+
+\mbox{\Hypertarget{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao_acf8fb2e59848570f96989b86d8dad6c6}\label{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao_acf8fb2e59848570f96989b86d8dad6c6}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Model\+Dao}!save\+Model@{save\+Model}}
+\index{save\+Model@{save\+Model}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Model\+Dao}}
+\subsubsection{\texorpdfstring{save\+Model()}{saveModel()}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model\+Dao.\+save\+Model (\begin{DoxyParamCaption}\item[{String}]{modelfilepath,  }\item[{String}]{model\+Class\+Name }\end{DoxyParamCaption}) throws File\+Not\+Found\+Exception, I\+O\+Exception}
+
+
+
+This function saves the cluster in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modelfilepath} & \\
+\hline
+{\em model\+Class\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em File\+Not\+Found\+Exception} & \\
+\hline
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a5be76afee3c059eafe8e617578bc1f26}{org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao}.
+
+
+
+Referenced by org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+savemodel().
+
+\mbox{\Hypertarget{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao_aef8db8a9057a95cc0a3bb027843b609d}\label{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao_aef8db8a9057a95cc0a3bb027843b609d}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Model\+Dao}!train\+Model@{train\+Model}}
+\index{train\+Model@{train\+Model}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Model\+Dao@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::domain\+::\+Model\+Dao}}
+\subsubsection{\texorpdfstring{train\+Model()}{trainModel()}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model\+Dao.\+train\+Model (\begin{DoxyParamCaption}\item[{String}]{input,  }\item[{String}]{Output }\end{DoxyParamCaption})}
+
+
+
+This function trains the data using Kmeans algorithm and creates clusters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & \\
+\hline
+{\em Output} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_managed_bean_model_dao_a3249ae7d8c010b92d8226cffbbe2de78}{org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Managed\+Bean\+Model\+Dao}.
+
+
+
+Referenced by org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+trainmodel().
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/jboss/as/quickstarts/greeter/domain/\hyperlink{_model_dao_8java}{Model\+Dao.\+java}\end{DoxyCompactItemize}

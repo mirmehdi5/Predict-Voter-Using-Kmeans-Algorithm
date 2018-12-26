@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:ui="http://java.sun.com/jsf/facelets"
+   xmlns:f="http://java.sun.com/jsf/core" 
+	xmlns:h="http://xmlns.jcp.org/jsf/html"  
+	xmlns:p="http://primefaces.org/ui">
+   <ui:composition template="template.xhtml">
+      <ui:define name="content">
+         <a name="top"></a>
+         <div class="login-block">
+            <a href="/vote-project/greet.xhtml" class="back-btn">Back</a>
+            <div class="container">
+               <div class="row" style="display:block !important;">
+                  <h2 class="text-center">Please grade the current government based on their works in the following schemes/departments</h2>
+                  <h:outputText value="#{generalController.greeting}" style="color: green;padding-left: 15%;"
+                     rendered="#{not empty generalController.greeting}" />
+                  <h:form id="genForm">
+                     <div class="col-md-12 login-sec">
+                       <h:outputLabel for="input1" class="text-uppercase">handicapped-infants:</h:outputLabel> <h:message for="input1" style="color:red" />
+                        
+                       <h:inputText id="input1" class="form-control"  maxlength="3" validatorMessage="Please grade between 1 and 100" converterMessage="Enter a valid number"
+                           value="#{generalController.input1}" >
+                           <f:validateLongRange maximum="100" minimum="1" />
+                           
+                        </h:inputText>
+                        
+                        <h:outputLabel for="input2" class="text-uppercase">water-project-cost-sharing:</h:outputLabel> <h:message for="input2" style="color:red" />
+                        <h:inputText id="input2" class="form-control"  maxlength="3" validatorMessage="Please grade between 1 and 100" converterMessage="Enter a valid number"
+                           value="#{generalController.input2}" >
+                           <f:validateLongRange maximum="100" minimum="1" />
+                           
+                        </h:inputText>
+                        <h:outputLabel for="input3" class="text-uppercase">adoption-of-the-budget-resolution:</h:outputLabel> <h:message for="input3" style="color:red" />
+                        <h:inputText id="input3" class="form-control" maxlength="3" validatorMessage="Please grade between 1 and 100" converterMessage="Enter a valid number"
+                           value="#{generalController.input3}">
+                           <f:validateLongRange maximum="100" minimum="1" />
+                           
+                        </h:inputText>
+                        <h:outputLabel for="input4" class="text-uppercase">physician-fee-freeze:</h:outputLabel> <h:message for="input4" style="color:red" />
+                        <h:inputText id="input4" class="form-control" maxlength="3" validatorMessage="Please grade between 1 and 100" converterMessage="Enter a valid number"
+                           value="#{generalController.input4}" >
+                           <f:validateLongRange maximum="100" minimum="1" />
+                           
+                        </h:inputText>
+                        <h:outputLabel for="input5" class="text-uppercase">el-salvador-aid:</h:outputLabel> <h:message for="input5" style="color:red" />
+                        <h:inputText id="input5" class="form-control" maxlength="3" validatorMessage="Please grade between 1 and 100" converterMessage="Enter a valid number"
+                           value="#{generalController.input5}" >
+                           <f:validateLongRange maximum="100" minimum="1" />
+                           
+                        </h:inputText>
+                        <h:outputLabel for="input6" class="text-uppercase">religious-groups-in-schools:</h:outputLabel> <h:message for="input6" style="color:red" />
+                        <h:inputText id="input6" class="form-control" maxlength="3" validatorMessage="Please grade between 1 and 100" converterMessage="Enter a valid number"
+                           value="#{generalController.input6}" >
+                           <f:validateLongRange maximum="100" minimum="1" />
+                           
+                        </h:inputText>
+                        <h:outputLabel for="input7" class="text-uppercase">anti-satellite-test-ban:</h:outputLabel> <h:message for="input7" style="color:red" />
+                        <h:inputText id="input7" class="form-control" maxlength="3" validatorMessage="Please grade between 1 and 100" converterMessage="Enter a valid number"
+                           value="#{generalController.input7}" >
+                           <f:validateLongRange maximum="100" minimum="1" />
+                           
+                        </h:inputText>
+                        <h:outputLabel for="input8" class="text-uppercase">aid-to-nicaraguan-contras:</h:outputLabel> <h:message for="input8" style="color:red" />
+                        <h:inputText id="input8" class="form-control" maxlength="3" validatorMessage="Please grade between 1 and 100" converterMessage="Enter a valid number"
+                           value="#{generalController.input8}" >
+                           <f:validateLongRange maximum="100" minimum="1" />
+                           
+                        </h:inputText>
+                        <h:outputLabel for="input9" class="text-uppercase">mx-missile:</h:outputLabel> <h:message for="input9" style="color:red" />
+                        <h:inputText id="input9" class="form-control" maxlength="3" validatorMessage="Please grade between 1 and 100" converterMessage="Enter a valid number"
+                           value="#{generalController.input9}" >
+                           <f:validateLongRange maximum="100" minimum="1" />
+                           
+                        </h:inputText>
+                        <h:outputLabel for="input10" class="text-uppercase">immigration:</h:outputLabel> <h:message for="input10" style="color:red" />
+                        <h:inputText id="input10" class="form-control" maxlength="3" validatorMessage="Please grade between 1 and 100" converterMessage="Enter a valid number"
+                           value="#{generalController.input10}" >
+                           <f:validateLongRange maximum="100" minimum="1" />
+                           
+                        </h:inputText>
+                        <h:outputLabel for="input11" class="text-uppercase">synfuels-corporation-cutback:</h:outputLabel> <h:message for="input11" style="color:red" />
+                        <h:inputText id="input11" class="form-control" maxlength="3" validatorMessage="Please grade between 1 and 100" converterMessage="Enter a valid number"
+                           value="#{generalController.input11}" >
+                           <f:validateLongRange maximum="100" minimum="1" />
+                           
+                        </h:inputText>
+                        <h:outputLabel for="input12" class="text-uppercase">education-spending:</h:outputLabel><h:message for="input12" style="color:red" />
+                        <h:inputText id="input12" class="form-control" maxlength="3" validatorMessage="Please grade between 1 and 100" converterMessage="Enter a valid number"
+                           value="#{generalController.input12}" >
+                           <f:validateLongRange maximum="100" minimum="1" />
+                           
+                        </h:inputText>
+                        <h:outputLabel for="input13" class="text-uppercase">superfund-right-to-sue:</h:outputLabel><h:message for="input13" style="color:red" />
+                        <h:inputText id="input13" class="form-control" maxlength="3" validatorMessage="Please grade between 1 and 100" converterMessage="Enter a valid number"
+                           value="#{generalController.input13}" >
+                           <f:validateLongRange maximum="100" minimum="1" />
+                           
+                        </h:inputText>
+                        <h:outputLabel for="input14" class="text-uppercase">crime:</h:outputLabel> <h:message for="input14" style="color:red" />
+                        <h:inputText id="input14" class="form-control" maxlength="3" validatorMessage="Please grade between 1 and 100" converterMessage="Enter a valid number"
+                           value="#{generalController.input14}" >
+                           <f:validateLongRange maximum="100" minimum="1" />
+                           
+                        </h:inputText>
+                        <h:outputLabel for="input15" class="text-uppercase">duty-free-exports:</h:outputLabel> <h:message for="input15" style="color:red" />
+                        <h:inputText id="input15" class="form-control" maxlength="3" validatorMessage="Please grade between 1 and 100" converterMessage="Enter a valid number"
+                           value="#{generalController.input15}" >
+                           <f:validateLongRange maximum="100" minimum="1" />
+                           
+                        </h:inputText>
+                        <h:outputLabel for="input16" class="text-uppercase">export-administration-act-south-africa:</h:outputLabel> <h:message for="input16" style="color:red" />
+                        <h:inputText id="input16" class="form-control" maxlength="3" validatorMessage="Please grade between 1 and 100" converterMessage="Enter a valid number"
+                           value="#{generalController.input16}" >
+                           <f:validateLongRange maximum="100" minimum="1" />
+                           
+                        </h:inputText>
+                        <h:outputLabel for="model" class="text-uppercase">Enter the class name of the Model in the database: </h:outputLabel>
+                        <h:inputText id="model" class="form-control"
+                           value="#{generalController.model}" />
+                        <h:commandButton id="submit" value="submit"  class="btn btn-login predict-btn"
+                           action="#{generalController.predictmodel}" />
+                     </div>
+                     <a id="myBtn" href="#top">Back to top</a>
+                  </h:form>
+               </div>
+            </div>
+         </div>
+      </ui:define>
+   </ui:composition>
+</html>

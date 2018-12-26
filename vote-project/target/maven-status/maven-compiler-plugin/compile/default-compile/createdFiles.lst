@@ -1,0 +1,14 @@
+org\jboss\as\quickstarts\greeter\domain\ManagedBeanUserDao.class
+org\jboss\as\quickstarts\greeter\domain\ClusterModel.class
+org\jboss\as\quickstarts\greeter\domain\UserDao.class
+org\jboss\as\quickstarts\greeter\web\AdminController.class
+org\jboss\as\quickstarts\greeter\domain\EJBUserDao.class
+org\jboss\as\quickstarts\greeter\Resources.class
+org\jboss\as\quickstarts\greeter\web\DeveloperController.class
+org\jboss\as\quickstarts\greeter\domain\MainCluster.class
+org\jboss\as\quickstarts\greeter\domain\ManagedBeanModelDao.class
+org\jboss\as\quickstarts\greeter\web\GeneralController.class
+org\jboss\as\quickstarts\greeter\domain\User.class
+org\jboss\as\quickstarts\greeter\domain\Model.class
+org\jboss\as\quickstarts\greeter\web\GreetController.class
+org\jboss\as\quickstarts\greeter\domain\ModelDao.class

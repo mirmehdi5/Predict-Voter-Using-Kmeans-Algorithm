@@ -1,0 +1,11 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node12 [label="Serializable",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node12 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="org.jboss.as.quickstarts.greeter.domain.\lClusterModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_cluster_model.html",tooltip="It is a Serializable class used to map the clusters in the database. "];
+  Node12 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="org.jboss.as.quickstarts.greeter.domain.\lMainCluster",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_main_cluster.html",tooltip="It is a Serializable class used to map the clusters in the database. "];
+}

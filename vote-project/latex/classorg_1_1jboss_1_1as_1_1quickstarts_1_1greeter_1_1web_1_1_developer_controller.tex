@@ -1,0 +1,394 @@
+\hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller}{}\section{org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller Class Reference}
+\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller}\index{org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller@{org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller}}
+
+
+Collaboration diagram for org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_af45acb1518af25aee3f532b1a04fc9f5}{trainmodel} ()
+\begin{DoxyCompactList}\small\item\em This functions calls the train\+Model function to create the clusters using Kmeans algorithm. \end{DoxyCompactList}\item 
+void \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_aa2470881e290068e50060883722953e0}{savemodel} ()
+\begin{DoxyCompactList}\small\item\em This function calls the save\+Model function in the bean to save the clusters in the database. \end{DoxyCompactList}\item 
+void \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a0204f7d1b8c5a8f0fa68270bd84c7c0c}{calcacc} ()
+\begin{DoxyCompactList}\small\item\em This function calls the calc\+Accuracy in the bean to calculate the accuracy of the algorithm. \end{DoxyCompactList}\item 
+String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_ad8bddc8376cd930a31ee581aebf630ab}{get\+Inputfilepath} ()
+\begin{DoxyCompactList}\small\item\em This function gets the input file path in H\+D\+FS from the developer\+\_\+page.\+xhtml. \end{DoxyCompactList}\item 
+void \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a292fd69a973406936fa1e1a0b0ec6b22}{set\+Inputfilepath} (String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a61bbf99553c38751a4db3723fcf86ce2}{inputfilepath})
+\item 
+String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a7e84dcd2c68bc4af89723a1fcd0fb3ae}{get\+Modelfilepath} ()
+\begin{DoxyCompactList}\small\item\em This function gets the model file path in H\+D\+FS from the developer\+\_\+page.\+xhtml. \end{DoxyCompactList}\item 
+void \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_ac2c1dc7f49bd0b2190cac99c845eb6e6}{set\+Modelfilepath} (String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a7217d97e73528f36dd074101cc6212f7}{modelfilepath})
+\item 
+String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_afb7be03bf898a7f7162be156b524d42c}{get\+Outputfilepath} ()
+\begin{DoxyCompactList}\small\item\em This function gets the output file path in H\+D\+FS from the developer\+\_\+page.\+xhtml. \end{DoxyCompactList}\item 
+void \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a0a24199c28f79ad9cfe3ad6a06493d13}{set\+Outputfilepath} (String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a3e0376c736576915aa56e9a171393d35}{outputfilepath})
+\item 
+String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_afcb2b9de670a397308c66741e94ff156}{get\+Modelclassname} ()
+\begin{DoxyCompactList}\small\item\em This function gets the model class name in the database from the developer\+\_\+page.\+xhtml. \end{DoxyCompactList}\item 
+void \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a787145ce2fa2297e874b5e3eba63cb6d}{set\+Modelclassname} (String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_aec4dde64623318b1b021c6e3a88e496d}{modelclassname})
+\item 
+String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a033fea1a1afc1e2ae958ce0466d62888}{get\+Greeting} ()
+\begin{DoxyCompactList}\small\item\em This function gets the greeting attribute from the developer\+\_\+page.\+X\+H\+T\+ML page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao}{Model\+Dao} \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a16bbc88f807eba18aea0d42b8c263c8f}{model\+Dao}
+\item 
+String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a61bbf99553c38751a4db3723fcf86ce2}{inputfilepath}
+\item 
+String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_aec4dde64623318b1b021c6e3a88e496d}{modelclassname}
+\item 
+String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a3e0376c736576915aa56e9a171393d35}{outputfilepath}
+\item 
+String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a7217d97e73528f36dd074101cc6212f7}{modelfilepath}
+\item 
+String \hyperlink{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_ab3a4eb4f08723b09bba21032d9183c01}{greeting}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 33 of file Developer\+Controller.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a0204f7d1b8c5a8f0fa68270bd84c7c0c}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a0204f7d1b8c5a8f0fa68270bd84c7c0c}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!calcacc@{calcacc}}
+\index{calcacc@{calcacc}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{calcacc()}{calcacc()}}
+{\footnotesize\ttfamily void org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+calcacc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function calls the calc\+Accuracy in the bean to calculate the accuracy of the algorithm. 
+
+
+
+Definition at line 74 of file Developer\+Controller.\+java.
+
+
+
+References org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model\+Dao.\+calc\+Accuracy(), org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+get\+Modelclassname(), and org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+get\+Modelfilepath().
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a033fea1a1afc1e2ae958ce0466d62888}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a033fea1a1afc1e2ae958ce0466d62888}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!get\+Greeting@{get\+Greeting}}
+\index{get\+Greeting@{get\+Greeting}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{get\+Greeting()}{getGreeting()}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+get\+Greeting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function gets the greeting attribute from the developer\+\_\+page.\+X\+H\+T\+ML page. 
+
+
+
+Definition at line 153 of file Developer\+Controller.\+java.
+
+
+
+References org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+greeting.
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_ad8bddc8376cd930a31ee581aebf630ab}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_ad8bddc8376cd930a31ee581aebf630ab}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!get\+Inputfilepath@{get\+Inputfilepath}}
+\index{get\+Inputfilepath@{get\+Inputfilepath}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{get\+Inputfilepath()}{getInputfilepath()}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+get\+Inputfilepath (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function gets the input file path in H\+D\+FS from the developer\+\_\+page.\+xhtml. 
+
+\begin{DoxyReturn}{Returns}
+the input file path in string format. 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file Developer\+Controller.\+java.
+
+
+
+References org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+inputfilepath.
+
+
+
+Referenced by org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+trainmodel().
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_afcb2b9de670a397308c66741e94ff156}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_afcb2b9de670a397308c66741e94ff156}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!get\+Modelclassname@{get\+Modelclassname}}
+\index{get\+Modelclassname@{get\+Modelclassname}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{get\+Modelclassname()}{getModelclassname()}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+get\+Modelclassname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function gets the model class name in the database from the developer\+\_\+page.\+xhtml. 
+
+\begin{DoxyReturn}{Returns}
+the model file path in string format. 
+\end{DoxyReturn}
+
+
+Definition at line 138 of file Developer\+Controller.\+java.
+
+
+
+References org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+modelclassname.
+
+
+
+Referenced by org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+calcacc(), and org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+savemodel().
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a7e84dcd2c68bc4af89723a1fcd0fb3ae}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a7e84dcd2c68bc4af89723a1fcd0fb3ae}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!get\+Modelfilepath@{get\+Modelfilepath}}
+\index{get\+Modelfilepath@{get\+Modelfilepath}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{get\+Modelfilepath()}{getModelfilepath()}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+get\+Modelfilepath (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function gets the model file path in H\+D\+FS from the developer\+\_\+page.\+xhtml. 
+
+\begin{DoxyReturn}{Returns}
+the model file path in string format. 
+\end{DoxyReturn}
+
+
+Definition at line 106 of file Developer\+Controller.\+java.
+
+
+
+References org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+modelfilepath.
+
+
+
+Referenced by org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+calcacc(), and org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+savemodel().
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_afb7be03bf898a7f7162be156b524d42c}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_afb7be03bf898a7f7162be156b524d42c}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!get\+Outputfilepath@{get\+Outputfilepath}}
+\index{get\+Outputfilepath@{get\+Outputfilepath}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{get\+Outputfilepath()}{getOutputfilepath()}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+get\+Outputfilepath (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function gets the output file path in H\+D\+FS from the developer\+\_\+page.\+xhtml. 
+
+\begin{DoxyReturn}{Returns}
+the output file path in string format. 
+\end{DoxyReturn}
+
+
+Definition at line 122 of file Developer\+Controller.\+java.
+
+
+
+References org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+outputfilepath.
+
+
+
+Referenced by org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+trainmodel().
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_aa2470881e290068e50060883722953e0}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_aa2470881e290068e50060883722953e0}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!savemodel@{savemodel}}
+\index{savemodel@{savemodel}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{savemodel()}{savemodel()}}
+{\footnotesize\ttfamily void org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+savemodel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function calls the save\+Model function in the bean to save the clusters in the database. 
+
+
+
+Definition at line 59 of file Developer\+Controller.\+java.
+
+
+
+References org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+get\+Modelclassname(), org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+get\+Modelfilepath(), and org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model\+Dao.\+save\+Model().
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a292fd69a973406936fa1e1a0b0ec6b22}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a292fd69a973406936fa1e1a0b0ec6b22}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!set\+Inputfilepath@{set\+Inputfilepath}}
+\index{set\+Inputfilepath@{set\+Inputfilepath}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{set\+Inputfilepath()}{setInputfilepath()}}
+{\footnotesize\ttfamily void org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+set\+Inputfilepath (\begin{DoxyParamCaption}\item[{String}]{inputfilepath }\end{DoxyParamCaption})}
+
+This function sets the input file path to the developer\+\_\+page.\+xhtml. 
+\begin{DoxyParams}{Parameters}
+{\em inputfilepath} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 98 of file Developer\+Controller.\+java.
+
+
+
+References org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+inputfilepath.
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a787145ce2fa2297e874b5e3eba63cb6d}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a787145ce2fa2297e874b5e3eba63cb6d}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!set\+Modelclassname@{set\+Modelclassname}}
+\index{set\+Modelclassname@{set\+Modelclassname}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{set\+Modelclassname()}{setModelclassname()}}
+{\footnotesize\ttfamily void org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+set\+Modelclassname (\begin{DoxyParamCaption}\item[{String}]{modelclassname }\end{DoxyParamCaption})}
+
+This function sets the model class name to be saved in the database to the developer\+\_\+page.\+xhtml. 
+\begin{DoxyParams}{Parameters}
+{\em modelclassname} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 146 of file Developer\+Controller.\+java.
+
+
+
+References org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+modelclassname.
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_ac2c1dc7f49bd0b2190cac99c845eb6e6}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_ac2c1dc7f49bd0b2190cac99c845eb6e6}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!set\+Modelfilepath@{set\+Modelfilepath}}
+\index{set\+Modelfilepath@{set\+Modelfilepath}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{set\+Modelfilepath()}{setModelfilepath()}}
+{\footnotesize\ttfamily void org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+set\+Modelfilepath (\begin{DoxyParamCaption}\item[{String}]{modelfilepath }\end{DoxyParamCaption})}
+
+This function sets the model file path to the developer\+\_\+page.\+xhtml. 
+\begin{DoxyParams}{Parameters}
+{\em modelfilepath} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 114 of file Developer\+Controller.\+java.
+
+
+
+References org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+modelfilepath.
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a0a24199c28f79ad9cfe3ad6a06493d13}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a0a24199c28f79ad9cfe3ad6a06493d13}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!set\+Outputfilepath@{set\+Outputfilepath}}
+\index{set\+Outputfilepath@{set\+Outputfilepath}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{set\+Outputfilepath()}{setOutputfilepath()}}
+{\footnotesize\ttfamily void org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+set\+Outputfilepath (\begin{DoxyParamCaption}\item[{String}]{outputfilepath }\end{DoxyParamCaption})}
+
+This function sets the output file path to the developer\+\_\+page.\+xhtml. 
+\begin{DoxyParams}{Parameters}
+{\em outputfilepath} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 130 of file Developer\+Controller.\+java.
+
+
+
+References org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+outputfilepath.
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_af45acb1518af25aee3f532b1a04fc9f5}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_af45acb1518af25aee3f532b1a04fc9f5}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!trainmodel@{trainmodel}}
+\index{trainmodel@{trainmodel}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{trainmodel()}{trainmodel()}}
+{\footnotesize\ttfamily void org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+trainmodel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This functions calls the train\+Model function to create the clusters using Kmeans algorithm. 
+
+
+
+Definition at line 51 of file Developer\+Controller.\+java.
+
+
+
+References org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+get\+Inputfilepath(), org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+get\+Outputfilepath(), and org.\+jboss.\+as.\+quickstarts.\+greeter.\+domain.\+Model\+Dao.\+train\+Model().
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_ab3a4eb4f08723b09bba21032d9183c01}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_ab3a4eb4f08723b09bba21032d9183c01}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!greeting@{greeting}}
+\index{greeting@{greeting}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{greeting}{greeting}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+greeting\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 46 of file Developer\+Controller.\+java.
+
+
+
+Referenced by org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+get\+Greeting().
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a61bbf99553c38751a4db3723fcf86ce2}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a61bbf99553c38751a4db3723fcf86ce2}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!inputfilepath@{inputfilepath}}
+\index{inputfilepath@{inputfilepath}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{inputfilepath}{inputfilepath}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+inputfilepath\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 38 of file Developer\+Controller.\+java.
+
+
+
+Referenced by org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+get\+Inputfilepath(), and org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+set\+Inputfilepath().
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_aec4dde64623318b1b021c6e3a88e496d}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_aec4dde64623318b1b021c6e3a88e496d}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!modelclassname@{modelclassname}}
+\index{modelclassname@{modelclassname}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{modelclassname}{modelclassname}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+modelclassname\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 40 of file Developer\+Controller.\+java.
+
+
+
+Referenced by org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+get\+Modelclassname(), and org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+set\+Modelclassname().
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a16bbc88f807eba18aea0d42b8c263c8f}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a16bbc88f807eba18aea0d42b8c263c8f}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!model\+Dao@{model\+Dao}}
+\index{model\+Dao@{model\+Dao}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{model\+Dao}{modelDao}}
+{\footnotesize\ttfamily \hyperlink{interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_model_dao}{Model\+Dao} org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+model\+Dao\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 36 of file Developer\+Controller.\+java.
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a7217d97e73528f36dd074101cc6212f7}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a7217d97e73528f36dd074101cc6212f7}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!modelfilepath@{modelfilepath}}
+\index{modelfilepath@{modelfilepath}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{modelfilepath}{modelfilepath}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+modelfilepath\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 44 of file Developer\+Controller.\+java.
+
+
+
+Referenced by org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+get\+Modelfilepath(), and org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+set\+Modelfilepath().
+
+\mbox{\Hypertarget{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a3e0376c736576915aa56e9a171393d35}\label{classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1web_1_1_developer_controller_a3e0376c736576915aa56e9a171393d35}} 
+\index{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}!outputfilepath@{outputfilepath}}
+\index{outputfilepath@{outputfilepath}!org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller@{org\+::jboss\+::as\+::quickstarts\+::greeter\+::web\+::\+Developer\+Controller}}
+\subsubsection{\texorpdfstring{outputfilepath}{outputfilepath}}
+{\footnotesize\ttfamily String org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+outputfilepath\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 42 of file Developer\+Controller.\+java.
+
+
+
+Referenced by org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+get\+Outputfilepath(), and org.\+jboss.\+as.\+quickstarts.\+greeter.\+web.\+Developer\+Controller.\+set\+Outputfilepath().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/jboss/as/quickstarts/greeter/web/\hyperlink{_developer_controller_8java}{Developer\+Controller.\+java}\end{DoxyCompactItemize}

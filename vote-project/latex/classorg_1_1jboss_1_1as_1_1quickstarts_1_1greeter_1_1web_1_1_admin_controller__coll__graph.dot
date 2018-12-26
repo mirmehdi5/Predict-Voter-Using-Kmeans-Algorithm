@@ -1,0 +1,11 @@
+digraph "org.jboss.as.quickstarts.greeter.web.AdminController"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="org.jboss.as.quickstarts.greeter.web.\lAdminController",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" newUser" ];
+  Node2 [label="org.jboss.as.quickstarts.greeter.domain.User",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_user.html",tooltip="This class maps to the Users table in the database. "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" userDao" ];
+  Node3 [label="org.jboss.as.quickstarts.greeter.domain.\lUserDao",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfaceorg_1_1jboss_1_1as_1_1quickstarts_1_1greeter_1_1domain_1_1_user_dao.html",tooltip="This interface consists of all the user related operations. "];
+}
