@@ -1,7 +1,6 @@
 vote-project - Design and implement a JBoss Maven project named vote-project as a 4-tire enterprise application. 
 ========================
 Author: Mir Mohammed Mehdi
-Level: Beginner  
 Technologies: JSF, EJB, MDB, Bootstrap, Restful Service, logging, Hadoop, SQL
 Summary: The projects trains and predicts the data as to which political party the user would vote for in future.  
 Target Product: WildFly  
